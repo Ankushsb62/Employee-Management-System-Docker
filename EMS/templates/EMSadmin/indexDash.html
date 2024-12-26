@@ -1,0 +1,39 @@
+{% extends 'EMSadmin/base.html' %} {% block content %}
+{% load static %}
+
+<div class="dash-content">
+    <div class="overview">
+        <div class="title">
+            <i class="uil uil-tachometer-fast-alt"></i>
+            <span class="text">Admin Dashboard</span>
+        </div>
+
+        <div class="boxes">
+            <div class="box box1">
+                <i class="uil uil-user"></i>
+                <span class="text">Employee</span>
+                <span class="number">{{employee_count}}</span>
+            </div>
+            <div class="box box2">
+                <i class="uil uil-user-exclamation"></i>
+                <span class="text">Manager</span>
+                <span class="number">{{manager_count}}</span>
+            </div>
+            <div class="box box3">
+                <i class="uil uil-share"></i>
+                <span class="text">Project</span>
+                <span class="number">10,120</span>
+            </div>
+            <div class="box box4">
+                <i class="uil uil-share"></i>
+                <span class="text">Client</span>
+                <span class="number">10,120</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+{% endblock %}
