@@ -3,7 +3,7 @@ services:
     image: postgres
     container_name: postgres
     ports:
-      - "5432:6432"
+      - "5433:5432"
     environment:
       POSTGRES_DB: docker
       POSTGRES_USER: postgres
